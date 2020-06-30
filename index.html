@@ -14,20 +14,26 @@
     <h1><a href="index.html" id="title" >Unsplash Photo Search</a></h1>
 
     <!-- searchbar -->
-    <form class="search">
+    <form class="search" id="search-form">
       <input type="text" name="search" id="search-input" placeholder="Search">
       <button id="search-button" >Explore</button>
     </form>
+
+    <!-- loader -->
+    <div class="loader" id="loader">
+      <img src="./loader.svg" alt="loading">
+    </div>
+
   </header>
 
   <main>
     <!-- gallery -->
-    <div id="gallery"></div>
+    <div id="gallery" class="gallery"></div>
   </main>
 
     <!-- button -->
   <div class="nav-button">
-    <button id="more" >More</button>
+    <button id="more" class="more">More</button>
   </div>
   
   <script src="app.js"></script>

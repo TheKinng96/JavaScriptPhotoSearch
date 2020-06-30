@@ -56,3 +56,40 @@ form button {
   color: white;
   font-size: 1rem;
 }
+
+.loader {
+  position: absolute;
+  top: 15rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  padding: 2rem 0rem;
+  width: 80%;
+  margin: auto;
+  row-gap: 2rem;
+  column-gap: 1rem;
+}
+
+.gallery img {
+  height: 100%;
+  width: 100%;
+}
+
+.nav-button {
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more {
+  padding: 1rem 3rem;
+  background: rgb(177, 177, 177);
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
