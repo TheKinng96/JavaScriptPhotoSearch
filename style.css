@@ -23,7 +23,7 @@ header {
 }
 
 header h1 {
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 .search {
@@ -92,4 +92,70 @@ form button {
   font-size: 1.2rem;
   border-radius: 1.5rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 702px) {
+  header h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  header h1 {
+    width: 60%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form input {
+    margin-bottom: 1rem;
+    width: 25rem;
+    height: 3rem;
+    font-size: 1.75rem;
+  }
+
+  form button {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 417px) {
+  form input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    height: 3rem;
+    font-size: 1.75rem;
+  }
+
+  form button {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 358px) {
+  header h1 {
+    font-size: 3rem;
+  }
+  
+  form input {
+    margin-bottom: 1rem;
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.75rem;
+  }
+
+  form button {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+  }
 }

@@ -36,6 +36,7 @@ function imageReady() {
   imagesLoaded++;
   if (imagesLoaded === totalImages) {
     loader.hidden = true;
+    title.innerHTML = `Results of ${searchValue.toUpperCase()}`
   }
 }
 
