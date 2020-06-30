@@ -55,7 +55,6 @@ function generatePictures(data) {
   imagesLoaded = 0;
   totalImages = data.results.length;
 
-  console.log(data)
   data.results.forEach((photo) => {
     const item = document.createElement('a');
     setAttributes(item, {
@@ -79,8 +78,15 @@ async function getPhotos() {
   fetchLink = `https://api.unsplash.com/search/collections/?client_id=${apiKey}&query=${searchValue}&per_page=30`
   const data = await fetchApi(fetchLink);
 
-  generatePictures(data);
-  more.hidden = false;
+  if (data.results.length == 0){
+    title.innerHTML = `No Results`
+    loader.hidden = true;
+    gallery.innerHTML = 'Please try another key word.'
+  }else {
+    generatePictures(data);
+    more.hidden = false;
+  }
+
 }
 
 function clear() {
