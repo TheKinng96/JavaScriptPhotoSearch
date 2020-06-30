@@ -127,6 +127,11 @@ form button {
 }
 
 @media screen and (max-width: 417px) {
+  
+  header{
+    margin-top: 1rem;
+  }
+
   form input {
     margin-bottom: 1rem;
     width: 20rem;
@@ -138,6 +143,10 @@ form button {
     width: 7rem;
     height: 2.5rem;
     font-size: 1.5rem;
+  }
+
+  .loader {
+    top: 22rem;
   }
 }
 
@@ -157,5 +166,9 @@ form button {
     width: 7rem;
     height: 2.5rem;
     font-size: 1.5rem;
+  }
+
+  .loader {
+    top: 20rem;
   }
 }
